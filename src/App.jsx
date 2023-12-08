@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Form from "./components/Form";
-import Listgroup from "./components/listgroup";
+import Listgroup from "./components/Listgroup";
 
 const App = () => {
   const [dark, setdark] = useState(true);
