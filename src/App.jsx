@@ -29,6 +29,7 @@ const App = () => {
   };
   const deletetodo = (id) => {
     setTodos(todos.filter((item) => item.id !== id));
+
   };
 
   const editFunc = (todo) => {

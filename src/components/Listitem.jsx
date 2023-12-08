@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const Listitem = ({ todos, deletetodo, editFunc}) => {
+const Listitem = ({ todos, deletetodo, editFunc }) => {
+  // console.log(color)
+  const [color, setColor] = useState("#000000");
+
+  useEffect(() => {
+    (() => {
+      const randomColor =
+        "#" +
+        Math.floor(Math.random() * 16777215)
+          .toString(16)
+          .padStart(6, "0");
+      console.log(randomColor);
+      setColor(randomColor);
+    })();
+
+  }, []);
+
   return (
     <li
+      style={{ backgroundColor: color }}
       className="list-group-item shadow-sm">
       <span className="float-end">
         <p>{todos.text}</p>
