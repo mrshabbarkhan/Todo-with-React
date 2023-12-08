@@ -55,7 +55,7 @@ const App = () => {
       <div className="container p-5">
         <div className="box">
           <Navbar dark={dark} changetheme={changetheme} />
-          <Form updatetodo={updatetodo} saveTodo={saveTodo} edit={edit}  />
+          <Form updatetodo={updatetodo} saveTodo={saveTodo} edit={edit} />
           <Listgroup
             todos={todos}
             deletetodo={deletetodo}
