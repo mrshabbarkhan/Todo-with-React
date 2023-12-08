@@ -3,11 +3,6 @@ import React from "react";
 const Listitem = ({ todos, deletetodo, editFunc}) => {
   return (
     <li
-      style={
-        {
-          // backgroundColor: color
-        }
-      }
       className="list-group-item shadow-sm">
       <span className="float-end">
         <p>{todos.text}</p>

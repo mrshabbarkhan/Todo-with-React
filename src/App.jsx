@@ -24,20 +24,6 @@ const App = () => {
     }
   };
 
-  // let edittodo =(oldtodo)=>{
-  //  setedit =({
-  //   todo: oldtodo,
-  // editmode: true,
-  //  })
-  // }
-
-  // const saveTodo = (text) => {
-  //   const newTodo = {
-  //     id: crypto.randomUUID(),
-  //     text:text
-  //   };
-  //   setTodos([newTodo, ...todos]);
-  // };
   const saveTodo = (text) => {
     setTodos([{ id: crypto.randomUUID(), text: text }, ...todos]);
   };
@@ -64,16 +50,6 @@ const App = () => {
     });
   };
 
-  // const [color, setcolor] = useState("#7136f0");
-
-  // const changecolor = () => {
-  //   const color2 = "#" * Math.floor(Math.random() * 16777215).toString(16);
-  //   setcolor(color2);
-  // };
-  // useEffect(() => {
-  //   changecolor();
-  // }, [todos]);
-
   return (
     <>
       <div className="container p-5">
@@ -84,7 +60,6 @@ const App = () => {
             todos={todos}
             deletetodo={deletetodo}
             editFunc={editFunc}
-            // color={color}
           />
         </div>
       </div>

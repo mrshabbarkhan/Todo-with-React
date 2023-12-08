@@ -3,7 +3,7 @@ import Listitem from "./listitem";
 
 
 
-const Listgroup = ({todos,deletetodo,editFunc,color}) => {
+const Listgroup = ({todos,deletetodo,editFunc}) => {
   return <ul className="list-group">
     {
         todos.map((todo)=><Listitem key={todo.id} todos={todo} deletetodo={deletetodo}  editFunc={editFunc}/>)
